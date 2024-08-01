@@ -1,0 +1,73 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfP-AXWjCf9s-_MyDFXVI4Ee7qCl11G72wg&s'); /* Replace with your background image URL */
+  background-size: cover;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.weather-container {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for weather info */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.weather-text {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.loader {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #0000ff;
+}
