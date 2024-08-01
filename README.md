@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Key Components
+1. State Management:
+ - city: Stores the input city name.
+ - weather: Stores the weather data fetched from the API.
+ - error: Stores any error messages.
+ - loading: Indicates if the application is in a loading state.
+   
+2. Functions:
+ - fetchWeather: Fetches weather data from the OpenWeatherMap API.
+ - handleInputChange: Updates the city state with user input.
+ - handleSearch: Triggers the fetchWeather function.
+   
+3. Styling:
+ - CSS classes are used to style the application, making it visually appealing and user-friendly.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Assumptions**
+-  API Key: The code assumes that the user has a valid OpenWeatherMap API key.
+ - Internet Connection: The application requires an active internet connection to fetch weather data from the API.
+ - Valid City Names: Users will enter valid city names recognized by the OpenWeatherMap API.
+ - Browser Compatibility: The application assumes it will be run in a modern web browser that supports ES6 and fetch API.
+   
+**Limitations**
+ - Error Handling: The error handling in the fetchWeather function is basic and only accounts for a "City not found" scenario. Other 
+      potential errors (e.g., network issues, API limits) are not specifically handled.
+ - Loading State: While a loading state is implemented, the user experience could be improved with a more visually appealing loader.
+ - CSS Styling: The current styling is minimal. More advanced styling and responsiveness could be added for better user experience.
+ - API Rate Limits: The OpenWeatherMap API has rate limits that might restrict the number of requests, especially with a free-tier API 
+     key.
+ - City Names: The application does not handle cases where multiple cities have the same name (e.g., Paris, France vs. Paris, Texas).
+ - Units of Measurement: The temperature is hardcoded to be displayed in Celsius. Adding a feature to switch between Celsius and 
+     Fahrenheit could make the app more versatile.
